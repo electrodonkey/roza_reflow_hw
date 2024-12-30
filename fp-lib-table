@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "reflow_master")(type "KiCad")(uri "${KIPRJMOD}/reflow_master.pretty")(options "")(descr ""))
+)

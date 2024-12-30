@@ -1,0 +1,232 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "07cb1bc2-09ed-423e-83c4-829f3663d8b1")
+	(paper "A4")
+	(title_block
+		(title "ElectroDonkey Reflow Master")
+		(date "2024-06-04")
+		(rev "V1")
+		(company "Electrodonkey")
+		(comment 1 "CC-BY-SA 4.0")
+	)
+	(lib_symbols)
+	(text_box "Features:\n\n- Powered by  STM32\n- 3.3V @ 48 MHz\n- MAX31856 thermocouple interface\n- 0.96″ 128×64 OLED LCD\n- 4 push buttons - up, down, select/START, back/STOP\n- LED for status indication\n- 1 terminal block for thermocouple type K\n- 2 terminal block for driving SSR to control heating element/oven\n- 1 terminal block for driving 5V fan\n- 1 buzzer output\n- 1 reset button\n- JTAG pins breakout\n- Unit is powered through a 220v -> 5v converter\n    \n"
+		(exclude_from_sim no)
+		(at 162.56 27.94 0)
+		(size 107.315 118.11)
+		(stroke
+			(width 1.5)
+			(type dash)
+		)
+		(fill
+			(type color)
+			(color 255 250 153 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "0980a3ae-4303-4b20-b903-ec085cf7c72a")
+	)
+	(text_box "Notes:\n\n- All resistors 0.0625W 1% unless otherwise specified\n- All capacitors are rated 50V X7R 10% unless otherwise specified\n"
+		(exclude_from_sim no)
+		(at 17.78 173.99 0)
+		(size 107.315 21.59)
+		(stroke
+			(width 1.1)
+			(type dash)
+		)
+		(fill
+			(type color)
+			(color 255 224 232 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "69be64b2-f466-4450-9e92-cd74aa779199")
+	)
+	(text "REFLOW CONTROLLER\n\n${REVISION}"
+		(exclude_from_sim no)
+		(at 57.785 27.94 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 1)
+				(bold yes)
+			)
+		)
+		(uuid "4a9db988-04f3-46fe-93a8-65673cb31b84")
+	)
+	(sheet
+		(at 19.05 57.785)
+		(size 17.145 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 40 63 255 1)
+		)
+		(fill
+			(color 249 255 169 1.0000)
+		)
+		(uuid "2ade865c-f284-46a5-aa46-0486a8285731")
+		(property "Sheetname" "MAX31856"
+			(at 19.05 57.0734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "thermo_amp.kicad_sch"
+			(at 19.05 71.0696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reflow_master"
+				(path "/07cb1bc2-09ed-423e-83c4-829f3663d8b1"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 57.785)
+		(size 17.145 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 40 63 255 1)
+		)
+		(fill
+			(color 249 255 169 1.0000)
+		)
+		(uuid "747a1b98-832c-46ea-80d8-1c693bb50ee4")
+		(property "Sheetname" "STM32_IOC"
+			(at 49.53 57.0734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "stm32.kicad_sch"
+			(at 49.53 71.0696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reflow_master"
+				(path "/07cb1bc2-09ed-423e-83c4-829f3663d8b1"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 57.785)
+		(size 17.145 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 40 63 255 1)
+		)
+		(fill
+			(color 249 255 169 1.0000)
+		)
+		(uuid "8ab77682-46c4-4eb3-8052-5f8ddbdb3389")
+		(property "Sheetname" "Power"
+			(at 101.6 57.0734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 101.6 71.0696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reflow_master"
+				(path "/07cb1bc2-09ed-423e-83c4-829f3663d8b1"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 78.105 57.785)
+		(size 17.145 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 40 63 255 1)
+		)
+		(fill
+			(color 249 255 169 1.0000)
+		)
+		(uuid "b7dbc7d0-121c-4f98-96dc-61a66fbc063d")
+		(property "Sheetname" "InputOutput"
+			(at 78.105 57.0734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IO.kicad_sch"
+			(at 78.105 71.0696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "reflow_master"
+				(path "/07cb1bc2-09ed-423e-83c4-829f3663d8b1"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
